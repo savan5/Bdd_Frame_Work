@@ -1,0 +1,110 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4043105700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "login with valid credential",
+        "description": "",
+        "id": "login-feature;login-with-valid-credential",
+        "after": [
+          {
+            "result": {
+              "duration": 722917100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 173047300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on login page",
+            "match": {
+              "location": "HomeStepDef.i_am_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1034873900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on login button",
+            "match": {
+              "location": "HomeStepDef.i_click_on_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 50346500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I shoud see \"Welcome, Please Sign In!\" text on login page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Welcome, Please Sign In!",
+                  "offset": 13
+                }
+              ],
+              "location": "LoginStepDef.i_shoud_see_text_on_login_page(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6060100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I shoud see \"/login\" text in url",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/login",
+                  "offset": 13
+                }
+              ],
+              "location": "LoginStepDef.i_shoud_see_text_in_url(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "login feature",
+    "description": "As a customer\r\nI want to login to the login functionality to check my login details",
+    "id": "login-feature",
+    "keyword": "Feature",
+    "uri": "login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@login"
+      }
+    ]
+  }
+]

@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources",
         dryRun = false,
-        strict = false,
+        strict = true,
         tags = "@login",
         plugin = "json:target/cucumber-report/cucumber.json")
 
