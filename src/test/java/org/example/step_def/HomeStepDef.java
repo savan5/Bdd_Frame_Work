@@ -35,5 +35,10 @@ HomePage homePage = new HomePage();
         homePage.clickOnLoginButtonOnHomePage();
 
     }
+    @Given("^I am on home page$")
+    public void i_am_on_home_page() throws Throwable {
+
+    }
+
 
 }
