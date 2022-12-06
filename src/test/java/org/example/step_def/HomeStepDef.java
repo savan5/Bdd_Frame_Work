@@ -39,6 +39,8 @@ HomePage homePage = new HomePage();
     public void i_am_on_home_page() throws Throwable {
 
     }
-
-
+    @Given("^I click on register button$")
+    public void i_click_on_register_button() throws Throwable {
+        homePage.clickOnRegistrationButtonOnHomePage();
+    }
 }

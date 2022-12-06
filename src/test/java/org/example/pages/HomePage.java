@@ -9,11 +9,16 @@ public class HomePage extends DriverManager {
     WebElement textOnHomePage;
     @FindBy(className = "ico-login")
     WebElement loginButtonOnHomePage;
+    @FindBy(className = "ico-register")
+    WebElement registrationButtonOnRegistrationPage;
+
     public String getTextFromHomePage(){
        return textOnHomePage.getText();
     }
     public void clickOnLoginButtonOnHomePage(){
         loginButtonOnHomePage.click();
-
+    }
+    public void clickOnRegistrationButtonOnHomePage(){
+        registrationButtonOnRegistrationPage.click();
     }
 }
