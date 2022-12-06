@@ -96,9 +96,8 @@ public class DriverManager {
         scenario.embed(screenShot, "image/png");
 //take a screen shot
         File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-
         try {
-            FileUtils.copyFile(scrFile, new File("/Users/khuntn01/Desktop/screanshotTests/Error.jpg"));
+            FileUtils.copyFile(scrFile, new File("/Users/Kuldeep Patel/OneDrive/Desktop/screenshotserror/Error.jpg"));
         } catch (IOException e) {
 // TODO Auto-generated catch block
             e.printStackTrace();

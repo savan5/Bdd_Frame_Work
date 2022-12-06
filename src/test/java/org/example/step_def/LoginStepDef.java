@@ -1,6 +1,7 @@
 package org.example.step_def;
 
 import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 import org.example.driver.DriverManager;
 import org.example.pages.LoginPage;
 
@@ -25,6 +26,25 @@ public class LoginStepDef extends DriverManager {
         System.out.println(actualUrl);
         assertThat(actualUrl, containsString(expectedUrlText));
 
+    }
+    @When("^I enter valid email \"([^\"]*)\"$")
+    public void i_enter_valid_email(String email) throws Throwable {
+        loginPage.enterEmail(email);
+    }
+
+    @When("^I enter valid password \"([^\"]*)\"$")
+    public void i_enter_valid_password(String password) throws Throwable {
+        loginPage.enterPassword(password);
+    }
+
+    @When("^I click on login button on login page$")
+    public void i_click_on_login_button_on_login_page() throws Throwable {
+        loginPage.clickOnLoginButtonOnLoginPage();
+    }
+    @Then("^I shoud see logout button displayed$")
+    public void i_shoud_see_logout_button_displayed() throws Throwable {
+       boolean logoutButtonIsDisplayed = loginPage.logoutButtonIsDisplayed();
+       assertThat(logoutButtonIsDisplayed ,is(true));
     }
 
 }
